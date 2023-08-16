@@ -1,45 +1,31 @@
-/*
- * main.c
- *
- *  Created on: Apr 5, 2023
- *      Author: Adham Abu bakr
- */
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-int check_prime(int num);
+int n1 ,n2 ;
 
-
+int prime_number(int n3,int n4);
 
 int main ()
 {
-	int n1,n2,i,flag;
-	printf("Enter two number (intervals):\n");
+	printf("Please Enter 2 number : ");
+	scanf("%d %d",&n1,&n2);
+	
+	prime_number(n1,n2);
 
-	scanf("%d%d ",&n1,&n2);
-
-	printf("prime numbers between %d and %d are :\n ",n1,n2);
-
-	for (i=n1+1 ;i<n2 ;i++)
-	{
-		flag=check_prime(i);
-		if(flag==0)
-			printf("%d \t",i);
-
-	}
-
-	return 0 ;
-}
-int check_prime(int num)
-{
-	int j,flag =0 ;
-	for(j=2 ;j<=num/2 ;j++)
-	{
-		if(num%j==0)
-		{
-			flag=1 ;
-			break ;
-		}
-	}
-	return flag ;
-}
+	return 0; 
+	 }
+	 
+	 
+	 int prime_number(int n3,int n4)
+	 {
+	 	for(int i=n1 ;i<n2;i++)
+	 	{
+	 		if(i%2==0)
+	 		{
+	 			continue ;
+			 }
+			 printf("\n Prime numbers between %d and %d are :%d \n ",n1,n2 ,i );
+			 
+		 }
+	 }

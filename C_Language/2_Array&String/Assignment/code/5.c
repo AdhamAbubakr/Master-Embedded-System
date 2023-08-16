@@ -18,7 +18,9 @@ int main ()
 	}
 	
 	printf("\n Enter the element to be inserted : ");
-	scanf("%d ",&location );
+	scanf("%d",&element);
+	printf("\n Enter The Location :");
+	scanf("%d",&location );
 	
 	for (i=num ;i >= location ; i--)
 	{
@@ -28,8 +30,8 @@ int main ()
 	num++ ;
 	arr[location -1 ]=element ;
 	
-	for (i=0 ;i,num ;i++)
-	printf("n%d ",arr[i]);
-	SS
+	for (i=0 ;i<num ;i++)
+	printf("%d ",arr[i]);
+
 				return 0 ;
 }

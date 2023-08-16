@@ -25,3 +25,4 @@ void reverse()
 		reverse();
 		printf("%c",c);
 	}
+}
